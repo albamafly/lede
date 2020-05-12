@@ -115,7 +115,7 @@ jobs:
           CONFIG_PACKAGE_tc=y
           CONFIG_SQUID_enable-dlmalloc=y
           CONFIG_SQUID_enable-ipv6=y
-          CONFIG_SQUID_use-openssl=y
+          #CONFIG_SQUID_use-openssl=y
           CONFIG_PACKAGE_kmod-fs-nfs=y
           CONFIG_PACKAGE_kmod-fs-nfs-common=y
           CONFIG_PACKAGE_kmod-fs-nfs-v3=y
