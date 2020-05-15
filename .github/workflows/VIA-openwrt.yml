@@ -17,15 +17,13 @@
 
  jobs:
   build:
-    runs-on: ubuntu-latest
-
-     steps:
+    runs-on: ubuntu-latest    
+    steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout
         with:
           ref: master
-
-       - name: Initialization environment
+      - name: Space cleanup
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
