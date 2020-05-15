@@ -95,16 +95,16 @@
            # 固件压缩:
           cat >> .config <<EOF
              CONFIG_TARGET_IMAGES_GZIP=y
-          EOF
+           EOF
            # 编译UEFI固件:
           cat >> .config <<EOF
              CONFIG_EFI_IMAGES=y
-          EOF
+           EOF
            # IPv6支持:
           cat >> .config <<EOF
              CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
              CONFIG_PACKAGE_ipv6helper=y
-          EOF
+           EOF
            # 多文件系统支持:
           cat >> .config <<EOF
              CONFIG_PACKAGE_kmod-fs-nfs=y
@@ -117,7 +117,7 @@
              CONFIG_PACKAGE_kmod-fs-squashfs=y
              CONFIG_PACKAGE_kmod-phy-broadcom=y  
              CONFIG_PACKAGE_kmod-phylib-broadcom=y
-          EOF
+           EOF
            # USB3.0支持:
           cat >> .config <<EOF
              CONFIG_PACKAGE_kmod-usb-ohci=y
@@ -126,9 +126,9 @@
              CONFIG_PACKAGE_kmod-usb2-pci=y
              CONFIG_PACKAGE_kmod-usb3=y
              CONFIG_PACKAGE_kmod-tg3=y
-          EOF
+           EOF
            # 常用LuCI插件选择:
-           cat >> .config <<EOF
+          cat >> .config <<EOF
              CONFIG_PACKAGE_luci-app-adbyby-plus=y
              CONFIG_PACKAGE_luci-app-aria2=y
              CONFIG_PACKAGE_luci-app-docker=y
@@ -157,11 +157,11 @@
              CONFIG_PACKAGE_Include s-sR Server=y
              CONFIG_PACKAGE_luci-app-p910nd=y
              CONFIG_PACKAGE_luci-app-watchcat=y
-          EOF
+           EOF
            # LuCI主题:
           cat >> .config <<EOF
              CONFIG_PACKAGE_luci-theme-argon=y
-          EOF
+           EOF
            # 常用软件包:
           cat >> .config <<EOF
              CONFIG_PACKAGE_curl=y
@@ -171,12 +171,12 @@
              CONFIG_PACKAGE_tree=y
              CONFIG_PACKAGE_vim-fuller=y
              CONFIG_PACKAGE_wget=y
-          EOF
+           EOF
            # 取消编译VMware镜像以及镜像填充 (不要删除被缩进的注释符号):
-          # cat >> .config <<EOF
-          #   # CONFIG_TARGET_IMAGES_PAD is not set
-          #   # CONFIG_VMDK_IMAGES is not set
-          # EOF
+          cat >> .config <<EOF
+             # CONFIG_TARGET_IMAGES_PAD is not set
+             # CONFIG_VMDK_IMAGES is not set
+           EOF
            # 
           # 固件定制部分结束.
           # 
