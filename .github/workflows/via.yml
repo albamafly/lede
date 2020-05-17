@@ -103,10 +103,6 @@ jobs:
             CONFIG_PACKAGE_mwan3=y
             CONFIG_PACKAGE_qos-scripts=y
             CONFIG_PACKAGE_squid=y
-            CONFIG_PACKAGE_tc=y
-            CONFIG_SQUID_enable-dlmalloc=y
-            CONFIG_SQUID_enable-ipv6=y
-            CONFIG_SQUID_use-openssl=y
             CONFIG_PACKAGE_kmod-fs-nfs=y
             CONFIG_PACKAGE_kmod-fs-nfs-common=y
             CONFIG_PACKAGE_kmod-fs-nfs-v3=y
@@ -119,6 +115,7 @@ jobs:
             CONFIG_PACKAGE_kmod-usb2-pci=y
             CONFIG_PACKAGE_kmod-usb3=y
             CONFIG_PACKAGE_luci-app-adbyby-plus=y
+            CONFIG_PACKAGE_luci-app-usb-printer=y
             CONFIG_PACKAGE_luci-app-aria2=y
             CONFIG_PACKAGE_luci-app-baidupcs-web=y
             CONFIG_PACKAGE_luci-app-docker=y
@@ -127,7 +124,6 @@ jobs:
             CONFIG_PACKAGE_luci-app-minidlna=y
             CONFIG_PACKAGE_luci-app-mwan3=y
             CONFIG_PACKAGE_luci-app-mwan3helper=y
-            CONFIG_PACKAGE_luci-app-openvpn=y
             CONFIG_PACKAGE_luci-app-openvpn-server=y
             CONFIG_PACKAGE_luci-app-qbittorrent=y
             CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
@@ -140,13 +136,9 @@ jobs:
             CONFIG_PACKAGE_luci-app-v2ray-server=y
             CONFIG_PACKAGE_luci-app-verysync=y
             CONFIG_PACKAGE_luci-app-webadmin=y
-            CONFIG_PACKAGE_luci-app-wireguard=y
             CONFIG_PACKAGE_luci-app-wrtbwmon=y   
             CONFIG_PACKAGE_luci-app-qos=y
             CONFIG_PACKAGE_luci-app-squid=y
-            CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
-            CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=y
-            CONFIG_PACKAGE_luci-i18n-qos-zh-cn=y
             CONFIG_PACKAGE_luci-theme-argon=y
             CONFIG_PACKAGE_luci-theme-netgear=y
             CONFIG_PACKAGE_curl=y
